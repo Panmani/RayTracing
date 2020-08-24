@@ -21,7 +21,7 @@ To test whether the ray of light is moving into or out from an object, I assumed
 ### Animation
 I borrowed what is used in Assignment 7 to do the transformations on the objects. Since I am only moving spheres, we can simply transform the center of the spheres. The algorithm is based on Assignment 3, so it is run on CPU, which is very slow given that it does not fork out other processes and only run on single core. The way I circumvented the problem is that I jumped forward in the animation for-loops running only transformations and skipping rendering. By doing this, I can parallelize multiple processes by scheduling them on different cores starting at different animation times.
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/6xUE11UmpSw/0.jpg)](http://www.youtube.com/watch?v=6xUE11UmpSw "UofT CSC418 Competition")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Mm3lITDwxWA/0.jpg)](http://www.youtube.com/watch?v=Mm3lITDwxWA "Ray Tracing Video")
 
 ### How to build and run
 Build:
