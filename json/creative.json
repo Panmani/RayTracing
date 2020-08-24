@@ -1,0 +1,158 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 2,
+    "eye": [15,3,7],
+    "up": [0,1,0],
+    "look": [-1,-0.1,-0.25],
+    "height": 1,
+    "width": 1.7777777778
+  },
+  "materials": [
+    {
+      "name": "pure glass",
+      "ka": [0.02,0.02,0.02],
+      "kd": [0.1,0.1,0.1],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.7,0.7,0.7],
+      "phong_exponent": 2000,
+      "is_dielectric": true,
+      "n_t": 1.5,
+      "a_rgb": [-100,0,0]
+    },
+    {
+      "name": "red metal",
+      "ka": [0.0894118,0.0101961,0.0109804],
+      "kd": [0.894118,0.101961,0.109804],
+      "ks": [0.894118,0.101961,0.109804],
+      "km": [0.894118,0.101961,0.109804],
+      "phong_exponent": 2000,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [10,10,10]
+    },
+    {
+      "name": "blue metal",
+      "ka": [0.0215686,0.0494118,0.0721569],
+      "kd": [0.215686,0.494118,0.721569],
+      "ks": [0.215686,0.494118,0.721569],
+      "km": [0.215686,0.494118,0.721569],
+      "phong_exponent": 2000,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [10,10,10]
+    },
+    {
+      "name": "green metal",
+      "ka": [0.0301961,0.0686275,0.0290196],
+      "kd": [0.301961,0.686275,0.290196],
+      "ks": [0.301961,0.686275,0.290196],
+      "km": [0.301961,0.686275,0.290196],
+      "phong_exponent": 2000,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [10,10,10]
+    },
+    {
+      "name": "purple metal",
+      "ka": [0.0596078,0.0305882,0.0639216],
+      "kd": [0.596078,0.305882,0.639216],
+      "ks": [0.596078,0.305882,0.639216],
+      "km": [0.596078,0.305882,0.639216],
+      "phong_exponent": 2000,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [10,10,10]
+    },
+    {
+      "name": "Lambertian white",
+      "ka": [0.02, 0.02, 0.02],
+      "kd": [0.8, 0.8, 0.8],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.6,0.6,0.6],
+      "phong_exponent": 20,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [0.5,0.5,0.5]
+    },
+    {
+      "name": "mirror",
+      "ka": [0.02,0.02,0.02],
+      "kd": [0.1,0.1,0.1],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.7,0.7,0.7],
+      "phong_exponent": 500,
+      "is_dielectric": false,
+      "n_t": 1.5,
+      "a_rgb": [0.1,0.1,0.1]
+    }
+  ],
+  "lights":[
+    {
+      "type": "directional",
+      "direction": [0,0,-1],
+      "color": [0.2,0.2,0.2]
+    },
+    {
+      "type": "point",
+      "position": [0,30,30],
+      "color": [0.8,0.8,0.8]
+    },
+    {
+      "type": "point",
+      "position": [0,30,-30],
+      "color": [0.3,0.3,0.3]
+    }
+  ],
+
+  "objects": [
+    {
+      "type": "sphere",
+      "material": "pure glass",
+      "radius": 1,
+      "center": [5,1,5]
+    },
+    {
+      "type": "sphere",
+      "material": "red metal",
+      "radius": 1,
+      "center": [0,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "purple metal",
+      "radius": 1,
+      "center": [2,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "green metal",
+      "radius": 1,
+      "center": [1,1.6,1.5]
+    },
+    {
+      "type": "sphere",
+      "material": "blue metal",
+      "radius": 1,
+      "center": [1,0,2.633]
+    },
+    {
+      "type": "plane",
+      "material": "Lambertian white",
+      "point": [0,-1,0],
+      "normal": [0,1,0]
+    },
+    {
+      "type": "plane",
+      "material": "mirror",
+      "point": [16,0,0],
+      "normal": [-1,0,0]
+    },
+    {
+      "material": "mirror",
+      "type": "plane",
+      "point": [-7,0,0],
+      "normal": [1,0,0]
+    }
+  ]
+}

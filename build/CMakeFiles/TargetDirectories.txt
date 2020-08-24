@@ -1,0 +1,4 @@
+/Users/mayueen/Downloads/Assignments/8. Refraction/build/CMakeFiles/rebuild_cache.dir
+/Users/mayueen/Downloads/Assignments/8. Refraction/build/CMakeFiles/edit_cache.dir
+/Users/mayueen/Downloads/Assignments/8. Refraction/build/CMakeFiles/hw2.dir
+/Users/mayueen/Downloads/Assignments/8. Refraction/build/CMakeFiles/raytracing.dir
